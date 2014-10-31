@@ -1,0 +1,34 @@
+<!Doctype html><html>
+<head>
+	<title>JS</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name='theme-color' content='#666'>
+	<script type="text/javascript">
+		function runjs(){
+			var commands = document.getElementById('commands').value;
+			document.getElementById('result').innerHTML = eval(commands);
+			//document.getElementById('result').write(eval(commands));
+		}
+	</script>
+	<style type="text/css">
+		body,html{text-align:center;background:#666;color:#ccc;}
+		#form{margin:0 auto;}
+		#commands{font-size:18px;width:98%;height:300px;background:#ccc;border:2px solid #999;border-radius:4px;}
+		#actions{margin-bottom:15px;margin-top:10px;}
+		#actions button{font-size:18px;height:40px;width:100px;border-radius:8px;}
+		#result{margin-top:10px;}
+		@media only screen and (min-width: 321px) {#commands{height:150px;}}
+	</style>
+</head>
+<body>
+	<form id="form" action="javascript:runjs()">
+		<div id="actions">
+			<button type="submit" id="execute">Execute</button>
+			<button type="reset" id="execute">Reset</button>
+		</div>
+		<textarea id="commands" placeholder='You can use "test" id'>alert("Hello Firefox OS")</textarea>
+	</form>
+	<div id="result"></div>
+	<div id="test"></div>
+</body>
+</html>

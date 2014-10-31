@@ -1,0 +1,16 @@
+{
+  "version": "0.1.2",
+  "name": "JS Emulator",
+  "description": "Execute javascript into this app.",
+  "launch_path": "/index.html",
+  "icons": {
+    "32": "/icons/32.png",
+    "64": "/icons/64.png",
+    "128": "/icons/128.png"
+  },
+  "developer": {
+    "name": "@amirtorrez",
+    "url": "http://twitter.com/amirtorrez"
+  },
+  "installs_allowed_from": ["*"]
+}
